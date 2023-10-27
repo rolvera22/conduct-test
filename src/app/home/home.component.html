@@ -1,0 +1,18 @@
+<!-- pdf viewer -->
+<!-- <div id="homePage">
+    <p>Select your language</p>
+    <ul *ngFor="let item of languages">
+        <li><a target="_self" href="../../assets/pdf/ConductCode{{item}}.pdf"><button>{{item}}</button></a></li>
+    </ul>
+</div> -->
+
+<!-- //img viewer -->
+<mat-toolbar id="header">
+    <img src="assets/img/current-logo.png" id="logo"/>
+</mat-toolbar>
+<div id="homePage">
+    <p>Select your language</p>
+    <ul *ngFor="let item of languages">
+        <li><a routerLink="/viewer"><button (click)="passLanguage(this.item)" >{{item}}</button></a></li>
+    </ul>
+</div>

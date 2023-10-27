@@ -1,0 +1,67 @@
+* {
+
+    font-family: "Aeonik";
+    text-align: center;
+}
+
+#header {
+    background-color: white;
+    display: flex;
+    justify-content: flex-end;
+}
+
+#logo{
+    max-height: 33%;
+}
+
+#homePage{
+    background-color:  #1C1C1C;
+    color: white;
+    padding: 0;
+    /* width: 90vmin; */
+    width: 100%;
+    margin: auto;
+    border-style: solid;
+    border-width: 1px;
+    border-color: white;
+    opacity: 95%;
+    position: fixed;
+    top: auto;
+    bottom: auto;
+    left: auto;
+    right: auto;
+}
+
+
+
+p{
+    font-size: 1.5em;
+    margin: .5em 0em;
+    color: white;
+}
+
+ul{
+    padding: 0;
+}
+
+li {
+    list-style-type: none;
+    width: 250px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0;
+}
+
+button{
+    font-size: 2em;
+    color: white;
+    border-radius: 1px;
+    border: 1.5px;
+    border-style: solid;
+    border-color: white;
+    cursor: pointer;
+    width: 100%;
+    padding: .5em 0em;
+    background-color:  #1C1C1C !important;
+    opacity: 100% !important;
+}

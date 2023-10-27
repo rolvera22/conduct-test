@@ -1,0 +1,90 @@
+p{
+    font-family: "Aeonik";
+    margin: 0;
+    font-size: 14px;
+}
+
+button {
+    border-style: solid;
+    border-width: 1px;
+    border-color: gainsboro;
+    font-family: "Aeonik";
+}
+
+mat-toolbar{
+    background-color: white;
+    border-style: solid;
+    border-color: white;
+    border-width: 0px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    position: fixed;
+    height: 5%;
+    min-width: 340px;
+}
+
+#header{
+    border-bottom-width: 1px;
+    top: 0;
+}
+
+.nav{
+    gap: 15px;
+}
+
+#logo{
+    max-height: 33%;
+    min-height: 17px;
+}
+
+/* #footer{
+    border-top-width: 1px;
+    bottom: 0;
+} */
+
+.bodyContainer{
+    background-color:#aaaaaa;
+    height: 100% !important;
+    width: auto;
+    padding-top: 5%;
+    padding-bottom: 1%;
+    min-width: 600px;
+}
+
+.cocimg{
+    max-height: 100%;
+    max-width: 100%;
+    min-width: 600px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+@media screen and (max-height: 600px){
+    .cocimg{
+        width: 95%;
+        object-fit: cover;
+        /* max-height: auto; */
+    }
+
+    mat-toolbar{
+        min-height: 50px;
+    }
+
+    .bodyContainer{
+        overflow:visible;
+        height: auto !important;
+        padding-top: 50px;
+    }
+}
+
+@media screen and (max-width: 600px){
+    .bodyContainer{
+        overflow:visible;
+        width: auto;
+    }
+
+    .cocimg{
+        overflow: visible;
+        left: 0 !important;
+        position: absolute !important;
+    }
+
+}

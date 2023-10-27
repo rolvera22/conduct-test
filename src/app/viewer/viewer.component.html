@@ -1,0 +1,35 @@
+<!-- <mat-toolbar id="header">
+    <a routerLink="/homePage"><button mat-raised-button class="backBtn">Back</button></a>
+    <div class="nav">
+        <button mat-raised-button (click)="prevPage()" disabled="{{prevDisabled}}">prev</button>
+        <p>page {{page}} of {{lastPage}}</p>
+        <button mat-raised-button (click)="nextPage()" disabled="{{nextDisabled}}">next</button>
+    </div>
+    <img src="../../assets/img/current-logo.png" id="logo" />
+</mat-toolbar>
+<div class="bodyContainer">
+    <img src="{{imgLink}}" (click)="nextPage()" class="cocimg" />
+</div> -->
+<!-- <mat-toolbar id="footer">
+    <img src="../../assets/img/current-logo.png" id="logo" />
+</mat-toolbar> -->
+
+<!-- <div class="viewerPage" fxLayout="row"> -->
+    <mat-toolbar id="header" fxLayoutAlign="space-between center" fxLayout="row">
+        <a routerLink="/homePage"><button mat-raised-button class="backBtn">Back</button></a>
+        <div class="nav" fxLayout="row" fxLayoutAlign="center center">
+            <button mat-raised-button (click)="prevPage()" disabled="{{prevDisabled}}">prev</button>
+            <p>page {{page}} of {{lastPage}}</p>
+            <button mat-raised-button (click)="nextPage()" disabled="{{nextDisabled}}">next</button>
+        </div>
+        <!-- <div class="empty"></div> -->
+        <img src="assets/img/current-logo.png" id="logo" fxShow="false" fxShow.gt-xs="true"/>
+        <!-- <img src="../../assets/img/current-logo.png" id="logo"/> -->
+    </mat-toolbar>
+    <div class="bodyContainer" fxLayoutAlign="center center">
+        <img src="{{imgLink}}" (click)="nextPage()" class="cocimg" />
+    </div>
+    <!-- <mat-toolbar id="footer" fxLayoutAlign="end center">
+    <img src="../../assets/img/current-logo.png" id="logo" />
+</mat-toolbar> -->
+<!-- </div> -->
